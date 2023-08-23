@@ -29,12 +29,12 @@ class MainActivity : AppCompatActivity() {
                 nome.isEmpty() -> {
                     mensagem(it, "Coloque o seu nome!")
                 }senha.isEmpty()-> {
-                    mensagem(it, "Preencha a semha!")
-                }senha.length <= 5->{
-                    mensagem(it, "A senha precisa ter pelo menos 6 caracteres!")
-                }else -> {
-                    navegarPraHome(nome)
-                }
+                mensagem(it, "Preencha a semha!")
+            }senha.length <= 5->{
+                mensagem(it, "A senha precisa ter pelo menos 6 caracteres!")
+            }else -> {
+                navegarPraHome(nome)
+            }
             }
         }
     }
@@ -52,3 +52,4 @@ class MainActivity : AppCompatActivity() {
         startActivity(intent)
     }
 }
+

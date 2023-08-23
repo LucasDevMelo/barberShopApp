@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.GridLayoutManager
 import com.example.barbershopapp.R
 import com.example.barbershopapp.adapter.ServicosAdapter
 import com.example.barbershopapp.databinding.ActivityHomeBinding
-import com.example.barbershopapp.model.Servicos
+import com.example.barbershopapp.adapter.model.Servicos
 
 class Home : AppCompatActivity() {
 
@@ -32,25 +32,25 @@ class Home : AppCompatActivity() {
         recyclerViewServicos.adapter = servicosAdapter
         getServicos()
 
-        binding.btAgendar.setOnClickListener{
-            val intent = Intent(this, Agendamento:: class.java)
+        binding.btAgendar.setOnClickListener {
+            val intent = Intent(this, Agendamento::class.java)
             intent.putExtra("nome", nome)
             startActivity(intent)
         }
     }
 
-    private fun getServicos(){
+    private fun getServicos() {
 
-        val servico1 = Servicos(R.drawable.img1, "Corte de cabelo")
+        val servico1 = Servicos(R.drawable.tesouras, "Corte de cabelo")
         listaServicos.add(servico1)
 
-        val servico2 = Servicos(R.drawable.img2, "Corte de barba")
+        val servico2 = Servicos(R.drawable.bigode, "Corte de barba")
         listaServicos.add(servico2)
 
-        val servico3 = Servicos(R.drawable.img3, "Lavagem de cabelo")
+        val servico3 = Servicos(R.drawable.espuma, "Lavagem de cabelo")
         listaServicos.add(servico3)
 
-        val servico4 = Servicos(R.drawable.img4, "Tratamento de cabelo")
+        val servico4 = Servicos(R.drawable.cosmetico, "Tratamento de cabelo")
         listaServicos.add(servico4)
     }
 }

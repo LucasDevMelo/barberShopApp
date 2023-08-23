@@ -1,4 +1,4 @@
-package com.example.barbershopapp.model
+package com.example.barbershopapp.adapter.model
 
 data class Servicos (
     val img: Int? = null,

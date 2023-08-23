@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.barbershopapp.databinding.ServicosItemBinding
-import com.example.barbershopapp.model.Servicos
+import com.example.barbershopapp.adapter.model.Servicos
 
 class ServicosAdapter(private val context: Context, private val listaServicos: MutableList<Servicos>):
     RecyclerView.Adapter<ServicosAdapter.ServicosViewHolder>(){
